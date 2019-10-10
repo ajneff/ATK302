@@ -13,14 +13,18 @@ function draw() {
 
 function Car() {
   this.pos = createVector(100, 100) ;
+  this.vel = createVector(random(-5, 5), random(-5,5)) ; ;
   this.x = random(width) ;
 
   this.display = function() {
-    rect(this.x, 100, 100, 50) ;
+    rect(this.pos.x, this.pos.y, 100, 50) ;
   }
   this.drive = function() {
-    this.x = this.x + 5;
-    if (this.x > width) this.x = 0 ;
+    this.pos.add (this.vel) ;
+    if (this.pos.x > width) this.pos.x = 0 ;
+    if (this.pos.x < 0) this.pos.x = width ;
+    if (this.pos.x > height) this.pos.x = 0 ;
+    if (this.pos.x > 0) this.pos.y = height ;
   }
 
 }
