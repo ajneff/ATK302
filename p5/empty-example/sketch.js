@@ -18,7 +18,7 @@ function draw() {
   //draw frogPos
   fill('green') ;
   ellipse(frogPos.x, frogPos.y, 60, 60) ;
-  function checkForKeys()
+  checkForKeys()
 }
 
 function Car() {
