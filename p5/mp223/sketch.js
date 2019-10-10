@@ -1,6 +1,6 @@
 var myState= 1
 var timer= 0
-
+//hi
 function setup() {
   createCanvas(1000, 1000);
   rectMode(CENTER) ;
