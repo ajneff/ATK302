@@ -5,7 +5,7 @@ var myState = 0;
 function preload() {
   song1 = loadSound('assets/life.mp3');
   song2 = loadSound('assets/post.mp3');
-  //song3 = loadSound('assets/unhappy.mp3');
+  song3 = loadSound('assets/unhappy.mp3');
 
   // set each song to loop and then immediately pause it so it doesn't play
 
@@ -13,8 +13,8 @@ function preload() {
   song1.stop();
   song2.loop();
   song2.stop();
-  //song3.loop();
-  //song3.stop();
+  song3.loop();
+  song3.stop();
 
 }
 
@@ -51,7 +51,7 @@ function draw() {
       break;
 
     case 4:
-      //song3.play();
+      song3.play();
       myState = 5;
       break;
 
@@ -69,7 +69,7 @@ function mouseReleased() {
   // pause all the songs
   song1.pause();
   song2.pause();
-  //song3.pause();
+  song3.pause();
 
   if (myState > 5) {
     myState = 0;
