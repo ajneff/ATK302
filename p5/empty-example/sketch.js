@@ -1,10 +1,12 @@
 var cars = [];
+var frogPos ;
 
 function setup() {
   createCanvas(800, 800);
   for (var i = 0; i < 40; i++) {
     cars.push(new Car());
   }
+  frogPos = createVector(width/2, height-80) ;
 }
 
 function draw() {
@@ -13,6 +15,9 @@ function draw() {
     cars[i].display();
     cars[i].drive();
   }
+  //draw frogPos
+  fill('green') ;
+  ellipse(frogPos.x, frogPos.y, 60, 60) ;
 }
 
 function Car() {
