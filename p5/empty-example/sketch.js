@@ -6,7 +6,9 @@ function setup() {
   for (var i = 0; i < 40; i++) {
     cars.push(new Car());
   }
-  frogPos = createVector(width/2, height-80) ;
+  frogPos = createVector(width/2, height-80)
+  rectMode(CENTER) ;
+  ellipseMode(CENTER) ;
 }
 
 function draw() {
