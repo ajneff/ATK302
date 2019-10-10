@@ -17,6 +17,7 @@ function draw() {
     cars[i].display();
     cars[i].drive();
     if (cars[i].pos.dist(frogPos) < 50) {
+      cars.splice(i, 1) ;
     }
   }
   //draw frogPos
