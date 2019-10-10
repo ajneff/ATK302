@@ -18,6 +18,7 @@ function draw() {
   //draw frogPos
   fill('green') ;
   ellipse(frogPos.x, frogPos.y, 60, 60) ;
+  function checkForKeys()
 }
 
 function Car() {
@@ -37,5 +38,14 @@ function Car() {
     if (this.pos.x > height) this.pos.x = 0;
     if (this.pos.x < 0) this.pos.y = height;
   }
+
+}
+
+
+function checkForKeys() {
+if (keyIsDown(LEFT_ARROW)) frogPos.x = frogPos.x - 5;
+if (keyIsDown(RIGHT_ARROW)) frogPos.x = frogPos.x + 5;
+if (keyIsDown(UP_ARROW)) frogPos.y = frogPos.y - 5;
+if (keyIsDown(DOWN_ARROW)) frogPos.y = frogPos.y + 5;
 
 }
