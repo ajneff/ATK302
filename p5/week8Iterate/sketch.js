@@ -19,7 +19,7 @@ dwarves[5] = "sneezy" ;
 dwarves[6] = "bashful" ;
 
 for (var i = 0; i < dwarves.length; i++) { // you can just copy this or memorize it
-  console.log(dwarves[
+  console.log(dwarves[i])
     var randomNumbers = new Array(100) ;
 for (var i = 0; i < 100; i++) {
   randomNumbers[i] = random(100) ; // put a random number in the array
@@ -27,4 +27,5 @@ for (var i = 0; i < 100; i++) {
    console.log("the number in space " + i + " = " + randomNumbers[i]) ;
 }
 
+}
 }
