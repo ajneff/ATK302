@@ -6,15 +6,28 @@ var cat, catLeft, catRight;
 var bird;
 var birds = [];
 var backpack;
+var x = 0;
+
+
+function preload() {
+
+  mySound = loadSound("assets/bongocat.mp3");
+
+}
 
 function setup() {
 
 
   createCanvas(1024, 688);
 
+  mySound.setVolume(1);
+  mySound.play();
+
+
   backpack = loadImage("assets/backpack.jpg");
-  samplefont= loadFont("assets/sea.ttf")
-  textFont("assets/sea.ttf", 128);
+
+  sea = loadFont("assets/sea.ttf");
+  textFont(sea, 50);
 
   catLeft = loadImage("assets/catLeft.png");
   catRight = loadImage("assets/catRight.png");
@@ -45,9 +58,14 @@ function draw() {
   switch (myState) {
 
     case 0: // splash screen
-      image(backpack, width/2, height/2);
+      image(backpack, width / 2, height / 2);
 
-      text('welcome to my game!', 255, 255);
+
+      text('welcome to my game!', x, 255);
+      x += 3;
+      if (x > width) {
+        x = 255;
+      }
       break;
 
     case 1:
@@ -62,17 +80,26 @@ function draw() {
     case 2: // the win state
       resetTheGame()
       //background('red');
-      image(backpack, width/2., height/2);
-      text('winner!', 255, 255);
+      image(backpack, width / 2., height / 2);
+      fill('black');
+      text('winner!', x, 255);
+      x += 3;
+      if (x > width) {
+        x = 255;
+      }
       break;
 
     case 3: // the lose state
       resetTheGame()
       //background('black');
-      image(backpack, width/2., height/2);
+      image(backpack, width / 2., height / 2);
 
-      fill("white")
-      text('loser!', 255, 255);
+      fill("black")
+      text('loser!', x, 255);
+      x += 3;
+      if (x > width) {
+        x = 255;
+      }
       break;
 
   }
@@ -170,7 +197,7 @@ function resetTheGame() {
 }
 
 function game() {
-    image(backpack, width/2, height/2);
+  image(backpack, width / 2, height / 2);
   for (var i = 0; i < cars.length; i++) {
     cars[i].display();
     cars[i].drive();
