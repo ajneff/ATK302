@@ -20,7 +20,7 @@ function setup() {
 
   createCanvas(1024, 688);
 
-  mySound.setVolume(1);
+  mySound.setVolume(10);
   mySound.play();
 
 
@@ -101,7 +101,7 @@ function draw() {
         x = 255;
       }
       break;
-//no
+      //no
   }
 }
 //advance states
