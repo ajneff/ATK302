@@ -10,7 +10,7 @@ let snowflakes = [];
 
 function preload() {
 
-  song1 = loadSound('assets/cold.mp3');
+  song1 = loadSound('assets/cold2.wav');
 
   song1.load();
   // song1.stop();
