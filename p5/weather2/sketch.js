@@ -127,3 +127,10 @@ function snowflake() {
     ellipse(this.posX, this.posY, this.size);
   };
 }
+
+function mouseReleased() {
+
+
+  // pause all the songs
+  song1.play();
+}
