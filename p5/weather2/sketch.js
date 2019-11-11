@@ -12,7 +12,7 @@ function preload() {
 
   song1 = loadSound('assets/cold.mp3');
 
-  song1.loop();
+  song1.load();
   // song1.stop();
 }
 
