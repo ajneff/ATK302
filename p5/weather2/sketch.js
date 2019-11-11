@@ -22,7 +22,7 @@ function setup() {
 
   song1.play()
   song1.loop();
-  song1.stop(); //take dis out
+  // song1.stop(); //take dis out
 
   // HERE Is the call to get the weather. PLEASE PUT YOUR OWN ID IN HERE!!!
   // MINE WILL STOP WORKING IF EVERYONE USES IT!!!
