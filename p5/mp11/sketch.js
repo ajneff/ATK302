@@ -7,7 +7,7 @@ function setup() {
 function draw() {
 
     background(255) ;
-    text("The Dirty bubble has aged quite a lot after retiring from the hit TV series; SpongeBob. He still urks Bikini Bottom in search to get his revenge on Barnacle Boy one day.""  )
+    text("The Dirty bubble has aged quite a lot after retiring from the hit TV series; SpongeBob. He still urks Bikini Bottom in search to get his revenge on Mermaid Man and Barnacle Boy one day.")
    text(mouseX + ", " + mouseY, 20, 20) ;
    fill(255,248,220);
     ellipse(500, 500, 800, 800);
@@ -16,6 +16,8 @@ function draw() {
    triangle(85, 80, 180, 195, 245, 80);
    triangle(550, 80, 470, 195, 400, 80);
    arc(360, 515, 250, 250, 0, PI + QUARTER_PI, CHORD);
+   text("The Dirty bubble has aged quite a lot after retiring from the hit TV series; SpongeBob. He still lurks Bikini Bottom in search to get his revenge on Barnacle Boy one day.", 20, 60)
+
 
  }
  textSize(100);
