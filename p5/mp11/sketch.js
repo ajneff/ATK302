@@ -17,7 +17,8 @@ text("Time Spent: 2 hours", 20, 70);
    triangle(85, 80, 180, 195, 245, 80);
    triangle(550, 80, 470, 195, 400, 80);
    arc(360, 515, 250, 250, 0, PI + QUARTER_PI, CHORD);
-   text("An abstract praying mantis. The rarest mantis in the world, sits and waits to feast on his next meal passing by. At the right time, (or when mouseIsPressed) the abstract praying mantis will lunge with its powerful hind legs and attack its prey with razor shar pincers.", 20, 60)
+   text("An abstract praying mantis. The rarest mantis in the world, sits and waits to feast on his next meal passing by. At the right time, or when mouseIsPressed", 20 60);
+   text("the abstract praying mantis will lunge with its powerful hind legs and attack its prey with razor shar pincers.", 20, 60);
 
 
  }
