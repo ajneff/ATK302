@@ -7,6 +7,7 @@ function setup() {
 function draw() {
 
     background(255) ;
+    text("The Dirty bubble has aged quite a lot after retiring from the hit TV series; SpongeBob. He still urks Bikini Bottom in search to get his revenge on Barnacle Boy one day.""  )
    text(mouseX + ", " + mouseY, 20, 20) ;
    fill(255,248,220);
     ellipse(500, 500, 800, 800);
